@@ -1,0 +1,263 @@
+@import 'tailwindcss';
+
+/* Pretendard font faces */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* 전체 배경색 설정 */
+body {
+  background-color: #FAF7FF; /* 매우 연한 연보라색 */
+  font-family: 'Pretendard', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* 텍스트 선택 및 복사 방지 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* 드래그 방지 */
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+/* 스크롤바 숨김 (모바일 가로 스크롤용) */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* 입력 필드와 버튼은 선택 가능하도록 예외 처리 */
+input, textarea, button, select, a {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* 텍스트 선택 방지 */
+.select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 한국어 가독성 개선 유틸 */
+.break-keep { /* 어절 단위 줄바꿈, 임의 분리 방지 */
+  word-break: keep-all;
+  line-break: strict;
+}
+
+.text-balance { /* 제목 균형 줄바꿈 */
+  text-wrap: balance;
+}
+
+.text-pretty { /* 문장 예쁜 줄바꿈 */
+  text-wrap: pretty;
+}
+
+/* 텍스트 가독성용 하얀색 하단 그림자 */
+.text-shadow-white-bottom {
+  text-shadow: 0 2px 6px rgba(255, 255, 255, 0.9);
+}
+
+/* Glassmorphism utility for buttons/cards */
+.glass {
+  background: rgba(255, 255, 255, 0.16);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Purple-tinted glass for CTA buttons on results */
+.glass-purple {
+  background: rgba(124, 58, 237, 0.18); /* accent-dark with alpha */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(124, 58, 237, 0.45);
+  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.25);
+}
+
+/* Disable glass blur when needed */
+.no-glass {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Solid purple CTA button */
+.btn-purple {
+  background: #7C3AED; /* accent dark */
+  color: #fff !important;
+  border: 1px solid #7C3AED;
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+}
+.btn-purple:hover {
+  background: #6D28D9; /* darker hover */
+  border-color: #6D28D9;
+}
+
+/* 메인 페이지 일반 텍스트 커스텀 폰트 크기 - Tailwind 우선순위 문제 해결 */
+/* h1 다음에 오는 일반 텍스트 (소제목이 아닌 일반 텍스트) */
+/* 모바일 전용: 추가 30% 증가 */
+.relative.z-10 p.subtitle-custom {
+  font-size: 13.79522664px !important; /* 13.524732px * 1.02 (2% 증가) */
+}
+
+@media (min-width: 640px) {
+  .relative.z-10 p.subtitle-custom {
+    font-size: 9.183213px !important; /* 9.00315px * 1.02 (2% 증가) */
+  }
+}
+
+@media (min-width: 768px) {
+  .relative.z-10 p.subtitle-custom {
+    font-size: 18.366426px !important; /* 18.0063px * 1.02 (2% 증가) */
+  }
+}
+
+@media (min-width: 1024px) {
+  .relative.z-10 p.subtitle-custom {
+    font-size: 22.9580245px !important; /* 22.507875px * 1.02 (2% 증가) */
+  }
+}
+
+/* 메인 페이지 콘텐츠 위치 조정 - 아래로 6% 이동 (8%에서 2% 위로 조정) */
+.relative.z-10.flex.flex-col.items-center {
+  transform: translateY(6%) !important;
+}
+
+@media (min-width: 768px) {
+  .relative.z-10.flex.flex-col.items-center {
+    transform: translateY(6%) !important;
+  }
+}
+
+/* 모바일 전용: 제목과 소제목 조금 내리기 */
+@media (max-width: 767px) {
+  .relative.z-10.flex.flex-col.items-center.justify-center h1.mobile-title-down,
+  .relative.z-10.flex.flex-col.items-center h1.mobile-title-down {
+    margin-top: 24px !important; /* 제목 조금 내리기 */
+    margin-bottom: 0 !important; /* mb-[1px] 오버라이드 */
+  }
+
+  .relative.z-10.flex.flex-col.items-center.justify-center p.mobile-subtitle-down,
+  .relative.z-10.flex.flex-col.items-center p.mobile-subtitle-down {
+    margin-top: 8px !important; /* 소제목 조금 내리기 */
+  }
+}
+
+/* 서브타이틀 하얀색 밑줄 - 모바일 전용 */
+.subtitle-underline {
+  border-bottom: 1px solid white !important;
+  padding-bottom: 2px !important;
+}
+
+@media (min-width: 768px) {
+  .subtitle-underline {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+/* Solid purple outline button */
+.btn-purple-outline {
+  background: transparent;
+  color: #7C3AED !important;
+  border: 2px solid #7C3AED;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+}
+.btn-purple-outline:hover {
+  background: rgba(124, 58, 237, 0.1);
+  border-color: #6D28D9;
+  color: #6D28D9 !important;
+}
+
+/* 모바일 배경 이미지 왼쪽 정렬 강제 */
+.bg-image-left {
+  object-position: left center !important;
+}
+
+@media (min-width: 768px) {
+  .bg-image-center {
+    object-position: center center !important;
+  }
+}
+
+/* 모바일/웹 컨텐츠 위치 조정 */
+.mobile-content-down {
+  transform: translateY(4px) !important;
+}
+
+@media (min-width: 768px) {
+  .mobile-content-down {
+    transform: translateY(-10px) !important;
+  }
+}
