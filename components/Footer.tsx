@@ -17,12 +17,12 @@ export default function Footer() {
                 peit24purples@gmail.com
               </a>
               <a
-                href="https://www.instagram.com/peit24__purples"
+                href="https://www.instagram.com/peit24__writer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="text-gray-600 hover:text-accent transition-colors"
-                title="Instagram: @peit24__purples"
+                title="Instagram: @peit24__writer"
               >
                 {/* Instagram Icon (inline SVG) */}
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">

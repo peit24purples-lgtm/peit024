@@ -98,12 +98,12 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <NavLinks />
             <a
-              href="https://www.instagram.com/peit24__purples"
+              href="https://www.instagram.com/peit24__writer/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
               className="text-gray-700 hover:text-accent transition-colors"
-              title="Instagram: @peit24__purples"
+              title="Instagram: @peit24__writer"
             >
               {/* Instagram Icon */}
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -159,7 +159,7 @@ export default function Navigation() {
         <div className="flex flex-col p-6 gap-1">
           <NavLinks onClick={() => setOpen(false)} />
           <a
-            href="https://www.instagram.com/peit24__purples"
+            href="https://www.instagram.com/peit24__writer/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

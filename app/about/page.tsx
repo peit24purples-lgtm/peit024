@@ -69,10 +69,10 @@ export default function AboutPage() {
             </p>
             <p className="mt-3 flex items-center gap-2">
               <a
-                href="https://www.instagram.com/peit24__purples"
+                href="https://www.instagram.com/peit24__writer/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram: @peit24__purples"
+                aria-label="Instagram: @peit24__writer"
                 className="text-gray-700 hover:text-accent transition-colors flex items-center gap-2"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -80,7 +80,7 @@ export default function AboutPage() {
                   <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z" />
                   <circle cx="17.5" cy="6.5" r="1.2" />
                 </svg>
-                <span className="underline decoration-transparent hover:decoration-inherit">@peit24__purples</span>
+                <span className="underline decoration-transparent hover:decoration-inherit">@peit24__writer</span>
               </a>
             </p>
           </section>
